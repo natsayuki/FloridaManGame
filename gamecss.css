@@ -1,0 +1,29 @@
+/*
+.choose-buttons {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border: 5px solid red;
+
+}
+*/
+/*
+#button-wrapper {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}*/
+
+#button-wrapper {
+  text-align: center;
+}
+
+.choose-buttons {
+  display: inline-block;
+  vertical-align: top;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  border: 5px solid red;
+}
