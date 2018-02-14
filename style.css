@@ -1,3 +1,42 @@
 body{
-  color: black;
+  background-color: #89bdd3;
+}
+#play-text{
+  position: relative;
+  top: -25%;
+  color: white;
+  font-size: 300%;
+}
+#play{
+  background-color:#c9c9c9;
+  width: 15rem;
+  height: 5rem;
+  position: absolute;
+  top: -25%;
+}
+.account-button{
+  display: inline-block;
+  width: 5rem;
+  height: 3rem;
+  background-color: #c9c9c9;
+}
+#account-button-wrapper{
+  position: absolute;
+  right: 1rem;
+}
+.account-button-text{
+  position: relative;
+  top: -10%;
+  color: white;
+}
+#play-text, .account-button-text{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#loading{
+  width: 100%;
+  height: 100%;
+  background-color: #c9c9c9;
 }
