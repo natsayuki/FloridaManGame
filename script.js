@@ -20,4 +20,7 @@ $(document).ready(function(){
   });
   play.animate({"top": '45%', 'opacity': '1'}, 'slow');
   banner.animate({'opacity': '1'}, 'slow');
+  $(play).click(function() {
+    window.location.replace('play.html');
+  });
 });

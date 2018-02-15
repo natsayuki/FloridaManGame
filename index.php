@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <div id="laoding"></div>
+    <form id="sign-up-form" action="signup.php" method="get"></form>
+    <form id="log-in-form" action="login.php" method="get"></form>
     <div id="account-button-wrapper">
       <div id="sign-up" class="account-button">
         <h3 align="center" class="account-button-text">Sign Up</h1>
