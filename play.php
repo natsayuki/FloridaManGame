@@ -18,7 +18,7 @@
       </div>
     </div>
     <div id="correct">
-      <h1 align="center">Correct</h1>
+      <h1 align="center" id="correct-score">0</h1>
     </div>
     <div id="article-wrapper">
       <div id="article">

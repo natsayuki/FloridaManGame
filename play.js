@@ -7,13 +7,18 @@ $(document).ready(function(){
   const streakText = $('#streak');
   const again = $('#again');
   const correctDiv = $('#correct');
+  const scoreText = $('#correct-score');
   let article = '';
   let real = true;
   let streak = 0;
   let articles = JSON.parse($('#articles').html());
+  correctDiv.css({'top': (String((($(window).height())/2) - ((correctDiv.height())/2))) + 'px',
+  'left': (String((($(window).width())/2) - ((correctDiv.width())/2))) + 'px'});
   $(window).resize(function(){
-    articleDiv.css({'top': (String((($(window).height())/2) - ((articleDiv.height())/2))) + 'px',
-    'left': (String((($('#article-wrapper').width())/2) - ((articleDiv.width())/2))) + 'px'});
+    articleDiv.css({'top': (String((($(window).height())/2) - ((correctDiv.height())/2))) + 'px',
+    'left': (String((($('#article-wrapper').width())/2) - ((correctDiv.width())/2))) + 'px'});
+    correctDiv.css({'top': (String((($(window).height())/2) - ((correctDiv.height())/2))) + 'px',
+    'left': (String((($(window).width())/2) - ((correctDiv.width())/2))) + 'px'});
   });
   const fetchArticle = function(){
     var keys = Object.keys(articles);
@@ -25,8 +30,10 @@ $(document).ready(function(){
   }
   const correct = function(){
     streak++;
+    scoreText.html(streak);
     correctDiv.css({'display': 'block'});
-    correctDiv.animate({'opacity': '1'}, 'fast').done(correctDiv.animate({'opacity': '0'}, 'fast')).done(correctDiv.css({'display': 'none'}));
+    setTimeout(function(){correctDiv.css({'display': 'none'})}, 601);
+    correctDiv.animate({'opacity': '1'}, 300).promise().done(correctDiv.animate({'opacity': '0'}, 300));
     fetchArticle();
   }
   const incorrect = function(){
@@ -40,7 +47,7 @@ $(document).ready(function(){
       correct();
     }
     else{
-      incorrect()
+      incorrect();
     }
   });
   bottomBut.click(function(){
