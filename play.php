@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,6 +10,16 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="play.js"></script>
+    <div id="done">
+      <h1 align="center">Oh no.  You lost.</h1>
+      <h1 align="center" id="streak">Streak: 0</h1>
+      <div id="again">
+        <h1 align="center">Play Again</h1>
+      </div>
+    </div>
+    <div id="correct">
+      <h1 align="center">Correct</h1>
+    </div>
     <div id="article-wrapper">
       <div id="article">
         <h1 id="articleText"></h1>

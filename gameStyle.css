@@ -3,6 +3,7 @@
   height: 50%;
   position: absolute;
   right: 0px;
+  z-index: 0;
 }
 #top-choice{
   top: 0px;
@@ -13,7 +14,7 @@
   background-color: red;
 }
 body{
-  background-color: #c9c9c9;
+  background-color: #89bdd3;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -33,10 +34,30 @@ h1{
 }
 #article{
   position: relative;
-  margin: auto;
-  top: 50%;
   width: 50%;
 }
 #articleText{
   font-size: 200%;
+}
+#done{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #89bdd3;
+  z-index: 1;
+  opacity: 0;
+  display: none;
+}
+#again{
+  background-color: #c9c9c9;
+}
+#correct{
+  background-color: green;
+  opacity: 0;
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
 }
