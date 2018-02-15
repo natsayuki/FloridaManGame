@@ -16,9 +16,10 @@
         <h3 align="center" class="account-button-text">Log In</h1>
       </div>
     </div>
-    <div id="banner"></div>
+    <h1 id="header">Florida Man Game</h1>
     <div id="play">
       <h1 align="center" id="play-text">Play</h1>
     </div>
+    <div id="banner"></div>
   </body>
 </html>

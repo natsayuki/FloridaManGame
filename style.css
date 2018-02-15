@@ -30,7 +30,7 @@ body{
   top: -10%;
   color: white;
 }
-#play-text, .account-button-text{
+#play-text, .account-button-text, #header{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -47,10 +47,18 @@ body{
 }
 #banner{
   position: absolute;
-  width: 2000px;
-  height: 500px;
+  width: 120%;
+  height: 45%;
   background: url('images/FloridaManBanner.png');
   bottom: 0px;
   left: 0px;
   -webkit-animation: scroll 9000s linear infinite;
+  z-index: -1;
+}
+#header{
+  position: absolute;
+  top: 10%;
+  color: white;
+  font-family: 'Comic Sans MS';
+  font-size: 1000%;
 }
