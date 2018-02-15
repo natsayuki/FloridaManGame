@@ -1,24 +1,27 @@
 $(document).ready(function(){
   const realBut = $('#top-choice');
   const bottomBut = $('#bottom-choice');
+  const articleText = $('#articleText');
+  let article = '';
   let real = true;
   let streak = 0;
-  let article = ''
+
+
+  //hey
+  let articles = JSON.parse($('#articles').html());
   const fetchArticle = function(){
-    $.getJSON('articles.json',function(articles) {
-      articles = JSON.stringify(articles);
-      articles = JSON.parse(articles);
-      const keys = Object.keys(articles);
-      console.log(keys[0])
-      article = keys[0]
-    });
-    console.log(article)
+    var keys = Object.keys(articles);
+    article = keys[ keys.length * Math.random() << 0];
+    real = (articles[article])['real'];
+    console.log((articles[article])['real'])
+    articleText.html(article)
   }
-  console.log(article);
+  fetchArticle();
   realBut.click(function(){
     if(real){
       streak++;
       alert('correct ' + streak);
+      fetchArticle();
     }
     else{
       alert('incorrect');
@@ -28,6 +31,7 @@ $(document).ready(function(){
     if(!real){
       streak++;
       alert('correct ' + streak);
+      fetchArticle();
     }
     else{
       alert('incorrect');
