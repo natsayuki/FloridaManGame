@@ -23,7 +23,7 @@ $(document).ready(function(){
   const fetchArticle = function(){
     var keys = Object.keys(articles);
     article = keys[ keys.length * Math.random() << 0];
-    real = (articles[article])['real'];
+    real = JSON.parse((articles[article])['real']);
     articleText.html(article);
     articleDiv.css({'top': (String((($(window).height())/2) - ((articleDiv.height())/2))) + 'px',
     'left': (String((($('#article-wrapper').width())/2) - ((articleDiv.width())/2))) + 'px'});
@@ -35,11 +35,27 @@ $(document).ready(function(){
     setTimeout(function(){correctDiv.css({'display': 'none'})}, 601);
     correctDiv.animate({'opacity': '1'}, 300).promise().done(correctDiv.animate({'opacity': '0'}, 300));
     fetchArticle();
+    $.ajax({
+  		type:"post",
+  		url: "scoreChanger.php",
+  		data: {"type":"correct","title":$("#articleText").html()},
+  		success: function(data) {
+  			  console.log(data);
+  			}
+  	});
   }
   const incorrect = function(){
     streakText.html("Streak: " + streak);
     done.css({'display': 'block'});
     done.animate({'opacity': '1'}, 'slow');
+    $.ajax({
+  		type:"post",
+  		url: "scoreChanger.php",
+  		data: {"type":"incorrect","title":$("#articleText").html()},
+  		success: function(data) {
+  			  console.log(data);
+  			}
+  	});
   }
   fetchArticle();
   realBut.click(function(){

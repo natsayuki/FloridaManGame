@@ -1,11 +1,11 @@
 {
-  "Florida Man unaware of drugs in pants says trousers were borrowed.": {"real": false, "likes": 0},
-  "Cops foil Florida Man's plans to marry an NES cartridge of Tetris.": {"real": false, "likes": 0},
+  "Florida Man unaware of drugs in pants says trousers were borrowed.": {"real": false, "likes": 0, "correct":0, "incorrect": 0},
+  "Cops foil Florida Man's plans to marry an NES cartridge of Tetris.": {"real": false, "likes": 0, "correct":0, "incorrect": 0},
   "Florida man claims $450 million in bingo proceeds.": {"real": false, "likes": 0},
-  "Florida man caught putting lye in Yum Yum Sauce at Polk County mall.": {"real": false, "likes": 0},
-  "Florida Woman tries to scam $600 lottery winner by telling him he won only $5, but the 'winner' was an agent working undercover for the state Lottery Commission’s security division.": {"real": true, "likes": 0},
-  "Florida Man causes $100k in damage to Walmart liquor store under construction with hotwired forklift; gives police his name as 'Alice Wonderland' and says a hookah-smoking caterpillar told him to do it.": {"real": true, "likes": 0},
-  "Florida man is the hero we deserve": {"real": true, "likes": 0},
-  "Florida woman's toddler pulls loaded gun from toy box during child welfare check by police": {"real": true, "likes": 0},
-  "Florida man robs bank, strips naked, then runs down the street throwing stolen money everywhere.": {"real": true, "likes": 0}
+  "Florida man caught putting lye in Yum Yum Sauce at Polk County mall.": {"real": false, "likes": 0, "correct":0, "incorrect": 0},
+  "Florida Woman tries to scam $600 lottery winner by telling him he won only $5, but the 'winner' was an agent working undercover for the state Lottery Commission’s security division.": {"real": true, "likes": 0, "correct":0, "incorrect": 0},
+  "Florida Man causes $100k in damage to Walmart liquor store under construction with hotwired forklift; gives police his name as 'Alice Wonderland' and says a hookah-smoking caterpillar told him to do it.": {"real": true, "likes": 0, "correct":0, "incorrect": 0},
+  "Florida man is the hero we deserve": {"real": true, "likes": 0, "correct":0, "incorrect": 0},
+  "Florida woman's toddler pulls loaded gun from toy box during child welfare check by police": {"real": true, "likes": 0, "correct":0, "incorrect": 0},
+  "Florida man robs bank, strips naked, then runs down the street throwing stolen money everywhere.": {"real": true, "likes": 0, "correct":0, "incorrect": 0}
 }

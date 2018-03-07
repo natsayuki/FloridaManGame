@@ -1,8 +1,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Florida Man Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/onion2.png">
+    <title>The Onion Game</title>
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +19,7 @@
         <h3 align="center" class="account-button-text">Log In</h1>
       </div>
     </div>
-    <h1 id="header">Florida Man Game</h1>
+    <h1 id="header">The Onion Game</h1>
     <div id="play">
       <h1 align="center" id="play-text">Play</h1>
     </div>
